@@ -1,0 +1,140 @@
+@import './DeliveryCard/deliverycard';
+@import './Notification/notification';
+@import '../Client/Modals/modals';
+@import './buttons';
+@import './Tags/tags';
+@import './Pagination/pagination';
+@import './Inputs/input';
+@import './Breadcrumbs/breadcrumbs';
+@import './Sort/sort';
+@import './Filter/filter';
+@import './Switch/switch';
+@import './textcomponents';
+@import './Table/table';
+@import './Table/MobileSort/mobile-sort';
+
+.page-title {
+    font-family: $adder;
+    font-size: 5rem;
+    gap: 4px;
+    line-height: 100%;
+    // margin: 24px 0;
+    font-weight: 700;
+    display: inline-flex;
+
+    @media (max-width: 575px) {
+        font-size: 3rem;
+    }
+
+    @media (max-width: 479px) {
+        margin: 12px 0 12px 0;
+
+    }
+
+    &_admin {
+        margin: 24px 0 12px;
+    }
+}
+
+.page-info {
+    display: flex;
+    gap: 32px;
+    font-size: .875rem;
+    font-family: $helv;
+    color: #A1A1A1;
+
+    @media (max-width: 480px) {
+        flex-direction: column;
+        gap: 8px;
+        margin-top: 12px;
+    }
+}
+
+.page-subtitle {
+    font-family: $adder;
+    font-size: 2rem;
+    line-height: 2rem;
+    font-weight: 700;
+    color: black;
+    display: inline-flex;
+    gap: 4px;
+
+}
+
+.title-counter {
+    margin-top: .1em;
+    color: $brand-red;
+    font-size: .5em;
+    line-height: 100%;
+}
+
+.ui-ui {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.flex-container {
+    display: flex;
+}
+
+
+
+.socials {
+    font-family: $helv;
+    font-size: .875rem;
+    display: flex;
+    gap: 4px;
+
+    &__item {
+        cursor: pointer;
+        justify-content: center;
+        display: flex;
+        padding: 12px;
+        gap: 8px;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.2);
+        transition: .2s;
+
+        &:hover {
+            background: rgba(0, 0, 0, 0.4);
+        }
+    }
+}
+
+.social__title {
+    line-height: 16px;
+}
+
+.socials-list {
+    font-family: $helv;
+
+    &_vertical {
+        margin: 0;
+    }
+}
+
+
+
+.button-wishlist {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.2);
+    transition: .2s;
+    cursor: pointer;
+
+    &:hover {
+        background: $brand-red;
+    }
+
+    &_active {
+        background: $brand-red;
+        transition: .2s;
+
+        &:hover {
+            background: #D22223;
+        }
+    }
+}

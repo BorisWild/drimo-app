@@ -1,0 +1,16 @@
+.order_inctruction-btn{
+  display: flex;
+  align-items: center;
+  margin-top: 16px;
+  cursor: pointer;
+}
+
+.order_inctruction-btn span {
+	font-family: 'Helvetica', sans-serif;
+    margin-left: 8px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    color: #E92627;
+  }

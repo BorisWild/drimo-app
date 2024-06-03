@@ -1,0 +1,53 @@
+.auth-page {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #EFEFEF;
+
+  &__logo {
+    position: absolute;
+    top: 28px;
+  }
+
+  &__window {
+
+    position: relative;
+    min-width: 33.3333%;
+    background-color: white;
+    padding: 48px;
+
+    .close-icon {
+      position: absolute;
+      top: 24px;
+      right: 24px;
+    }
+
+    .page-subtitle {
+      font-size: 3rem;
+    }
+
+
+  }
+
+  &__input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin: 24px 0 32px;
+  }
+
+  .button-container {
+    width: 100%;
+
+    .button {
+      width: 100%;
+    }
+  }
+
+}

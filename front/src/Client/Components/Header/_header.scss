@@ -1,0 +1,254 @@
+@import '../MobileMenu/mobilemenu';
+
+.header {
+
+    position: fixed;
+    top: 0;
+    font-family: $adder;
+    font-size: 1.125rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid black;
+    background-color: white;
+    z-index: 9998;
+
+    &__menu {
+        display: flex;
+        position: relative;
+    }
+
+    &__user-buttons {
+        display: flex;
+    }
+
+    &__user-button {
+        background-color: $brand-yellow;
+        display: flex;
+        align-items: center;
+        padding: 20px 40px;
+        border-left: 2px solid black;
+        cursor: pointer;
+
+        @media (max-width: 1159px) {
+            padding: 20px;
+        }
+    }
+}
+
+.header-logo {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    pointer-events: none;
+
+    &__container {
+        pointer-events: auto;
+    }
+}
+
+.menu-catalog {
+
+
+    @media (max-width: 1159px) {
+        display: none;
+    }
+
+    &_active {
+        // background: rgba(0, 0, 0, 0.5);
+
+        .menu-catalog__body {
+            transform: translateX(0);
+        }
+    }
+
+    transition: all .3s;
+    background: rgba(0, 0, 0, 0);
+    pointer-events: none;
+    position: absolute;
+    display: flex;
+    top: calc(100% + 2px);
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 56px);
+    z-index: 800;
+
+    &__body {
+        pointer-events: auto;
+        display: flex;
+        flex-direction: column;
+        transition: all .3s;
+        transform: translateX(-100%);
+        background-color: white;
+        border-right: 2px solid black;
+        width: 33.3333%;
+        padding: 0 40px;
+        overflow: scroll;
+
+    }
+
+    &__item {
+        padding: 40px 0;
+        border-bottom: 1px #EFEFEF solid;
+    }
+
+    &__parent {
+        color: black;
+        position: relative;
+        cursor: pointer;
+        z-index: 10;
+
+        font-weight: 700;
+        font-size: 2.5rem;
+        line-height: 40px;
+
+        transition: .2s;
+
+        &:hover {
+            color: $brand-red;
+        }
+    }
+
+    &__children-list {
+        display: none;
+        flex-direction: column;
+        gap: 8px;
+        margin-top: 16px;
+
+        &_active {
+            display: flex;
+        }
+    }
+
+    a {
+        color: black;
+    }
+
+    &__children-item {
+
+
+        cursor: pointer;
+        font-size: .875rem;
+        font-family: $helv;
+        display: flex;
+        align-items: flex-end;
+        gap: 8px;
+        transition: .2s;
+
+        &:hover {
+            color: $brand-red
+        }
+    }
+}
+
+.menu-bg {
+    pointer-events: none;
+    position: absolute;
+    width: 100vw;
+    height: calc(100vh - 50px);
+    background-color: rgba(0, 0, 0, 0);
+    top: 62px;
+    left: 0;
+    z-index: 600;
+    transition: .2s;
+
+    &_active {
+        pointer-events: auto;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+}
+
+.item-about {
+    position: relative;
+
+    &__menu-body {
+        &_active {
+            display: flex;
+            z-index: 5000;
+
+
+        }
+
+
+        font-size: 0.875rem;
+        position: absolute;
+        top: 62px;
+        left: -2px;
+        white-space: nowrap;
+        color: black;
+        border: 2px solid black;
+        border-top: none;
+        background: white;
+        font-family: $helv;
+        display: none;
+        flex-direction: column;
+        gap: 16px;
+        padding: 24px;
+
+    }
+
+    &__item {
+        color: black;
+        transition: .2s;
+
+        &:hover {
+            color: $brand-red;
+        }
+    }
+}
+
+.menu {
+
+    &__item {
+
+        display: flex;
+        align-items: center;
+        color: white;
+        padding: 20px 32px;
+        border-right: 2px solid black;
+        cursor: pointer;
+
+        @media (max-width: 1159px) {
+            display: none;
+        }
+
+        &-burger {
+            display: none;
+            padding: 20px;
+            border-right: 2px solid black;
+            cursor: pointer;
+
+            @media (max-width: 1159px) {
+                display: flex;
+            }
+        }
+
+        .item__title {
+            margin-left: 8px;
+
+
+            &_right {
+                margin-right: 8px;
+            }
+        }
+
+
+        &_red-bg {
+            background-color: $brand-red;
+        }
+
+        &_blue-bg {
+            padding-left: 40px;
+            background-color: $brand-blue;
+        }
+
+        &_black {
+            color: #000000;
+        }
+    }
+
+
+}

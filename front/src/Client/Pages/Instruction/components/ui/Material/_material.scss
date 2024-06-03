@@ -1,0 +1,22 @@
+.material {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	column-gap: 4px;
+	p {
+		color: $grayColor;
+		font-size: 14px;
+		line-height: 16px;
+	}
+	&_small {
+		p {
+			font-size: 12px;
+			line-height: 14px;
+		}
+	}
+	img {
+		width: 16px;
+		height: 16px
+	}
+
+}

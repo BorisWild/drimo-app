@@ -1,0 +1,99 @@
+.category {
+  &__header {
+    .page-title {
+      margin: 24px 0 12px;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    gap: 16px;
+    margin-top: 40px;
+
+    @media (max-width: 480px) {
+      // flex-direction: column;
+      margin-top: 24px;
+    }
+  }
+
+  &__tags {
+    margin-top: 24px;
+  }
+
+  &__add-button {
+    margin: 16px 0 32px;
+  }
+
+  &__data {
+    font-family: $helv;
+    display: flex;
+    gap: 32px;
+
+    @media (max-width: 480px) {
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .label {
+      margin: 0;
+    }
+  }
+
+  &__title-input {
+    @media (max-width: 1023px) {
+      margin: 24px 0;
+
+    }
+
+
+    @media (max-width: 480px) {
+      width: 100%;
+
+    }
+
+    width: 66.6667%;
+    margin: 40px 0;
+  }
+
+  &__table {
+    margin-top: 16px;
+  }
+
+  &__inputs {
+    margin-bottom: 24px;
+  }
+
+  &__configurator {
+    margin-top: 16px;
+    font-family: $helv;
+    padding: 32px;
+    width: 66.6667%;
+    display: flex;
+    gap: 24px;
+    border: 2px solid black;
+    font-size: .875rem;
+
+    @media (max-width: 480px) {
+      padding: 24px;
+      width: 100%;
+
+    }
+
+    .label {
+      font-size: .75rem;
+    }
+
+  }
+
+  &__info-block {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: 25%;
+
+    @media (max-width: 480px) {
+      width: 100%;
+
+    }
+  }
+}

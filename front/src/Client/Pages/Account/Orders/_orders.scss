@@ -1,0 +1,95 @@
+@import './OrderPage/orderpage';
+
+.profile__orders-list {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    border: 2px solid black;
+    height: fit-content;
+
+}
+
+.profile-order {
+    &:not(&:nth-child(1)) {
+        border-top: 2px solid black;
+    }
+
+    display: flex;
+    width: 100%;
+
+    @media (max-width: 479px) {
+        flex-direction: column;
+    }
+
+    &__image {
+        background: #EFEFEF;
+        object-fit: contain;
+        width: 152px;
+        height: 152px;
+    }
+
+    &__body {
+        padding: 32px 32px 32px 24px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__info {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__left-side {}
+
+    &__right-side {
+
+        text-align: right;
+    }
+
+    &__id {
+        font-weight: 700;
+        font-size: 1.5rem;
+        margin-bottom: 4px;
+    }
+
+    &__date {
+        color: #A2A2A2;
+        font-size: 0.875rem;
+        font-family: $helv;
+    }
+
+    &__price {
+        font-weight: 700;
+        font-size: 1.5rem;
+        margin-bottom: 4px;
+    }
+
+    &__status {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-family: $helv;
+        font-size: 0.875rem;
+    }
+}
+
+.profile-order {
+
+    &__status-circle {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+
+        &_success {
+            background: #00BD4C;
+        }
+
+        &_failed {
+            background: $red-hover;
+        }
+    }
+
+}

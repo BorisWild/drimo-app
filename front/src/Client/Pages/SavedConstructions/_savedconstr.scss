@@ -1,0 +1,53 @@
+.saved {
+    &__title {
+        margin: 64px 0 16px;
+    }
+
+    &__tags {
+        margin-bottom: 40px;
+
+        @media (max-width: 1024px) {
+            overflow-y: scroll;
+        }
+    }
+
+    &__catalog {
+        .catalog-card {
+            width: 33.333%;
+            border: none;
+            border-left: 2px solid black;
+            border-bottom: 2px solid black;
+
+            &:nth-child(1),
+            &:nth-child(2),
+            &:nth-child(3) {
+                border-top: 2px solid black;
+            }
+
+            &:nth-child(3n) {
+                border-right: 2px solid black;
+            }
+
+            &:nth-last-child(1) {
+                border-right: 2px solid black;
+
+            }
+
+            @media (max-width: 575px) {
+                width: 50%;
+                border: none;
+                border-top: 2px solid black;
+                border-right: 2px solid black;
+
+                &:nth-child(2n - 1) {
+                    border-left: 2px solid black;
+                }
+
+                &:nth-last-child(1),
+                &:nth-last-child(2) {
+                    border-bottom: 2px solid black;
+                }
+            }
+        }
+    }
+}

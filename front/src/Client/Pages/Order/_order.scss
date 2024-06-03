@@ -1,0 +1,287 @@
+.order-section {
+
+    &__container {
+        border: 2px solid black;
+        margin-top: 32px;
+        padding: 32px;
+        display: flex;
+        flex-wrap: wrap;
+
+        @media (max-width: 480px) {
+            margin-top: 16px;
+            padding: 24px;
+        }
+    }
+
+    &__delivery {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 32px;
+        padding: 32px;
+
+    }
+}
+
+.order {
+    &__title {
+        font-size: 2rem;
+        margin: 32px 0 16px;
+
+        @media (max-width: 480px) {
+            font-size: 1.25rem;
+            margin: 24px 0 16px;
+        }
+    }
+
+    &__body {
+        position: relative;
+
+        display: flex;
+        gap: 24px;
+
+        @media (max-width: 1024px) {
+            flex-direction: column;
+            gap: 40px;
+        }
+    }
+
+    &__info {
+        width: 66.6667%;
+
+        @media (max-width: 1024px) {
+            width: 100%;
+        }
+    }
+
+
+
+    &__section {
+        margin-bottom: 48px;
+
+        @media (max-width: 480px) {
+            margin-bottom: 24px;
+        }
+
+        &:last-child {
+            margin: 0;
+        }
+
+    }
+
+
+
+
+
+    &__delivery {
+        padding: 0;
+    }
+
+    &__payment {
+        padding: 0;
+    }
+
+
+
+    &__summary {
+        position: sticky;
+        top: 94px;
+
+
+        @media (max-width: 1024px) {
+            width: 100%;
+            position: static;
+        }
+
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+    }
+
+    &__price {
+        border: 2px solid black;
+        background: $brand-yellow;
+
+    }
+
+    &__hint {
+        font-size: .75rem;
+        line-height: .875rem;
+        color: #A2A2A2;
+        font-family: $helv;
+    }
+
+    &__header {
+        margin-top: 8px;
+    }
+}
+
+
+.order-specification {
+
+    &__body {
+
+        display: none;
+        margin-bottom: 16px;
+
+        &_active {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+    }
+}
+
+.summary-container {
+    width: 33.3333%;
+
+    @media (max-width: 1024px) {
+        width: 100%;
+
+    }
+}
+
+.summary-container.summary-mobile {
+    display: none;
+
+    @media (max-width: 1024px) {
+        display: flex;
+        margin-top: 16px;
+    }
+
+}
+
+.order-price {
+
+    &__container {
+        padding: 32px;
+
+        @media (max-width: 480px) {
+            padding: 24px;
+        }
+    }
+
+    &__list {
+        border-bottom: 1px solid #000;
+    }
+
+    &__list-item {
+        padding-bottom: 16px;
+        font-family: $helv;
+        font-size: 0.875rem;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__sum {
+        margin-top: 16px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &-value {
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+
+        &-title {
+            font-size: 0.875rem;
+        }
+    }
+
+    &__button {
+        border-top: #000 2px solid;
+
+    }
+}
+
+.list-item {
+
+    &__title {}
+
+    &__value {
+        font-weight: 700;
+    }
+}
+
+
+
+.order-specification {
+
+
+
+    &__element {}
+}
+
+.spec-element {
+    font-family: $helv;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #E4E4E4;
+    padding-top: 8px;
+    margin-top: 8px;
+
+    &__info {
+        width: 50%;
+
+        @media (max-width: 768px) {
+            min-width: 66.6667%;
+        }
+    }
+
+    &__type {
+        margin-bottom: 4px;
+        font-size: .875rem;
+    }
+
+    &__material-title {
+        font-size: .75rem;
+        color: #A2A2A2;
+    }
+
+    &__material {
+        display: flex;
+        gap: 4px;
+    }
+
+    &__icon {
+        height: 12px;
+        width: 12px;
+    }
+
+    &__count {
+
+        width: 50%;
+        text-align: center;
+        font-size: .75rem;
+        color: #A2A2A2;
+    }
+
+    &__container {
+        display: flex;
+        width: 50%;
+
+        @media (max-width: 768px) {
+            min-width: 33.3333%;
+        }
+    }
+
+    &__price {
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
+        width: 50%;
+    }
+
+    &__sum {
+        margin-bottom: 4px;
+        font-weight: 700;
+        font-size: .875rem;
+    }
+
+    &__single {
+        font-size: .75rem;
+        color: #A2A2A2;
+    }
+}

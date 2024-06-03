@@ -1,0 +1,42 @@
+.button-inst {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	column-gap: 10px;
+	width: 180px;
+	height: 48px;
+	@media (max-width: 768px) {
+		width: 190px;
+	}
+	@media (max-width: 419px) {
+		width: 140px;
+		height: 40px;
+	}
+
+	background-color: #efefef;
+
+	transition: all 0.3s ease 0s;
+	@media (any-hover: hover) {
+		&:hover {
+			background-color: #cacaca;
+		}
+	}
+	p {
+		font-family: $helv;
+		font-weight: 700;
+		font-size: 12px;
+		line-height: 14px;
+		color: #525252;
+	}
+	&_orange {
+		background-color: #e92627;
+		p {
+			color: #fff;
+		}
+		@media (any-hover: hover) {
+			&:hover {
+				background-color: #c22020;
+			}
+		}
+	}
+}

@@ -1,0 +1,36 @@
+.textures {
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    .button-container {
+      margin-bottom: 8px;
+    }
+  }
+
+  &__filter {
+    margin: 0 0 32px 0;
+
+    @media (max-width: 480px) {
+      display: none;
+    }
+  }
+
+}
+
+.texture-page {
+  &__inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin: 28px 0 40px;
+    width: 66.6667%;
+
+    @media (max-width: 480px) {
+      width: 100%;
+
+    }
+  }
+}

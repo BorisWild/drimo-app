@@ -1,0 +1,26 @@
+version: "3.7"
+services:
+  front_prod:
+    build:
+      args:
+        BUILDVAR: PRODUCTION
+      context: ./front/
+      dockerfile: Dockerfile
+    image: obrol/drimo_front:v1
+    restart: always
+    environment:
+      - BUILDVAR=PRODUCTION
+    ports:
+      - 3000:3000
+  front_test:
+    build:
+      args:
+        BUILDVAR: TEST
+      context: ./front/
+      dockerfile: Dockerfile
+    image: obrol/drimo_front:v1
+    restart: always
+    environment:
+      - BUILDVAR=TEST
+    ports:
+      - 3000:3000

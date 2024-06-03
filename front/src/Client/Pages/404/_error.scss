@@ -1,0 +1,20 @@
+.error {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1 0 auto;
+  height: 100%;
+  font-family: $helv;
+  padding-top: 40px;
+
+  &__subtitle {
+    font-size: 16px;
+    margin-top: 16px;
+    margin-bottom: 48px;
+
+    @media (max-width: 480px) {
+      margin-top: 12px;
+      margin-bottom: 24px;
+    }
+  }
+}

@@ -1,0 +1,97 @@
+.arrow-right-icon {
+    @media (max-width: 479px) {
+        height: 20px;
+        width: 20px;
+    }
+
+    @media (max-width: 1159px) {
+        margin-top: 16px;
+    }
+}
+
+.mappin-icon {
+    position: absolute;
+    left: calc(50% - 64px/2 + 0.5px);
+    top: calc(50% - 77px/2 - 4px);
+}
+
+.close-icon {
+    cursor: pointer;
+}
+
+.arrow {
+    transition: .2s;
+    transform: rotate(0);
+
+    &_active {
+        transform: rotate(180deg);
+    }
+}
+
+.sort-icon {
+    transition: .2s;
+
+    &_asc {
+        transform: rotate(180deg);
+    }
+
+    &_desc {
+        transform: rotate(0deg);
+    }
+}
+
+.spec-icon {
+    transform: rotate(0deg);
+    transition: .2s;
+
+    &_active {
+        transform: rotate(180deg);
+    }
+}
+
+.filter-arrow {
+    transform: rotate(0deg);
+    transition: .2s;
+
+    &_active {
+        transform: rotate(180deg);
+
+        path {
+            stroke: $brand-red;
+
+        }
+
+    }
+}
+
+.select-arrow {
+    transition: .2s;
+    transform: rotate(0deg);
+
+    &_active {
+        transform: rotate(180deg);
+    }
+}
+
+.delete-icon {
+    padding: 4px;
+    border-radius: 50%;
+    background-color: transparent;
+    transition: .2s;
+
+    svg {
+        path {
+            transition: .2s;
+        }
+    }
+
+    &:hover {
+        background-color: white;
+
+        svg {
+            path {
+                stroke: black;
+            }
+        }
+    }
+}

@@ -1,0 +1,51 @@
+// @import '../Admin/Components/TableRow/tablerow';
+@import '../Admin/Pages/Category/category';
+@import '../Admin/Pages/Restrictions/restrictions';
+@import '../Admin/Pages/Textures/textures';
+@import '../Admin/Pages/Delivery/delivery';
+@import '../Admin/Pages/Payment/payment';
+@import '../Admin/Pages/Catalog/catalog';
+@import '../Admin/Pages/Solution/solution';
+
+
+.admin {
+  display: flex;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+
+  @media (max-width: 1023px) {
+    flex-direction: column;
+  }
+}
+
+.admin__page {
+  padding: 40px;
+  width: 81.25%;
+  margin-left: 18.75%;
+
+  @media (max-width: 1023px) {
+    width: 100%;
+    margin-left: 0;
+    padding: 16px;
+  }
+
+  @media (max-width: 480px) {
+    padding: 16px 16px 32px;
+  }
+
+  .category__data {
+    .label {
+      font-size: .875rem;
+      line-height: 1rem;
+    }
+  }
+
+  .page-title {
+    font-size: 4rem;
+
+    .title-counter {
+      font-size: .3125em;
+    }
+  }
+}

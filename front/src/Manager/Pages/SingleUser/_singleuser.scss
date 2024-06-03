@@ -1,0 +1,30 @@
+.single-user {
+
+  &__header {}
+
+  &__section {
+    margin-top: 40px;
+
+    .page-subtitle {
+      margin-bottom: 16px;
+    }
+
+  }
+
+  &__inputs-container {
+    display: flex;
+    // flex-direction: column;
+    flex-wrap: wrap;
+    gap: 24px;
+    width: 66.6667%;
+
+    .select {
+      width: 100%;
+    }
+
+
+    @media (max-width: 480px) {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,182 @@
+.table {
+
+  width: 100%;
+  font-size: .75rem;
+  line-height: .875rem;
+  font-weight: 400;
+  font-family: $helv;
+
+  &__image {
+    width: 82px;
+    height: 82px;
+    background-color: #EFEFEF;
+
+    @media (max-width: 1023px) {
+      margin-bottom: -8px;
+    }
+
+
+
+    img {
+      object-fit: contain;
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  &__filter {
+    @media (max-width: 1023px) {
+      display: none;
+    }
+
+    padding: 16px 24px;
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+  }
+
+  &__sort {
+    display: flex;
+    gap: 8px;
+    width: 100%;
+    // margin-right: 8px;
+  }
+
+  &__body {
+    color: black;
+    border: 2px solid black;
+  }
+
+  &__title {
+    font-family: $adder;
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.25rem;
+    color: black;
+  }
+
+  &__label {
+
+    color: #A2A2A2;
+  }
+
+  &__row {
+
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    // padding: 24px;
+
+    color: black;
+
+    @media (max-width: 1023px) {
+      flex-direction: column;
+
+    }
+
+    &:hover {
+      background-color: #E4E4E4;
+    }
+
+    &:not(&:nth-child(1)) {
+      border-top: 2px solid black;
+    }
+
+  }
+
+  &__col {
+    padding: 24px 0;
+    height: 100%;
+
+    @media (min-width: 1024px) {
+      &:nth-child(1) {
+        padding: 24px 0 24px 24px;
+      }
+
+      &:last-child {
+        padding: 24px 24px 24px 0;
+      }
+
+      &_w1 {
+        width: 8.3333%;
+      }
+
+      &_w2 {
+        width: 16.6667%;
+      }
+
+      &_w3 {
+        width: 25%;
+      }
+
+      &_w4 {
+        width: 33.3333%;
+      }
+
+      &_w5 {
+        width: 41.6667%;
+      }
+
+      &_w6 {
+        width: 50%;
+      }
+
+      &_w7 {
+        width: 58.3333%;
+      }
+
+      &_w8 {
+        width: 66.6667%;
+      }
+
+      &_w9 {
+        width: 75%;
+      }
+
+      &_w10 {
+        width: 83.3333%;
+      }
+
+      &_w11 {
+        width: 91.6667%;
+      }
+
+      &_w12 {
+        width: 100%;
+      }
+    }
+
+    &-label {
+      width: 50%;
+
+      @media (min-width: 1024px) {
+        display: none;
+      }
+    }
+
+    &-data {
+      width: 50%;
+    }
+
+    &_title-id {
+      display: flex;
+      flex-direction: column;
+
+      @media (max-width: 1023px) {
+        margin-top: 24px;
+      }
+
+    }
+
+    @media (max-width: 1023px) {
+      padding: 0 20px;
+      width: 100%;
+      display: flex;
+      gap: 8px;
+
+      &:last-child {
+        padding: 0 20px 20px;
+      }
+    }
+  }
+}

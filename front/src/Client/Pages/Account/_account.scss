@@ -1,0 +1,80 @@
+@import './Information/accinfo';
+@import './Orders/orders';
+
+.profile {
+
+    padding: 40px;
+    min-height: 100%;
+
+    @media (max-width: 575px) {
+        padding: 40px 16px;
+    }
+
+    &__title {}
+
+    &__body {
+        display: flex;
+        gap: 24px;
+        margin-top: 40px;
+
+        @media(max-width: 882px) {
+            flex-direction: column;
+        }
+
+        @media (max-width: 575px) {
+            margin-top: 24px;
+        }
+    }
+
+    &__section {
+
+        width: 75%;
+        padding: 40px;
+        border: 2px solid;
+
+        @media (max-width: 479px) {
+            padding: 24px;
+        }
+
+        @media(max-width: 882px) {
+            width: 100%;
+        }
+    }
+}
+
+.profile-menu {
+
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+
+    @media(max-width: 882px) {
+        width: 100%;
+    }
+
+    &__container {
+        border: 2px solid black;
+    }
+
+    &__title {
+        font-family: $adder;
+    }
+
+    &__item {
+
+        &:nth-child(2) {
+            border-top: 2px solid black;
+            border-bottom: 2px solid black;
+        }
+
+        padding: 20px 16px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        cursor: pointer;
+
+        &_active {
+            background-color: $brand-yellow;
+        }
+    }
+}

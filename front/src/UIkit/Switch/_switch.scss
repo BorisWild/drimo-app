@@ -1,0 +1,57 @@
+.switch {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+
+  &__title {
+    font-size: .75rem;
+    line-height: 14px;
+  }
+
+  &__container {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+  }
+
+  &__button {
+    width: 40px;
+    height: 24px;
+    border-radius: 24px;
+    padding: 2px;
+    display: flex;
+    transition: .2s;
+    cursor: pointer;
+
+    &_on {
+      background-color: $brand-red;
+
+      .switch__button-circle {
+        transform: translateX(calc(100% - 4px));
+      }
+    }
+
+    &_off {
+      background-color: #C4C4C4;
+
+      .switch__button-circle {
+        transform: translateX(0);
+      }
+    }
+  }
+
+  &__button-circle {
+    transition: .2s;
+    margin: 0;
+    border-radius: 50%;
+    background-color: white;
+    width: 20px;
+    height: 20px;
+  }
+
+  &__status {
+    font-family: $helv;
+    font-size: .875rem;
+  }
+}

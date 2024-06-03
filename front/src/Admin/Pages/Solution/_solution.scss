@@ -1,0 +1,46 @@
+.solution {
+
+  .page-title {
+    margin: 24px 0 16px;
+  }
+
+  &__image {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  &__image-label {
+    font-size: .75rem;
+    display: flex;
+  }
+
+  &__image-container {
+    width: 86px;
+    height: 86px;
+    object-fit: cover;
+    object-position: 50% 50%;
+    overflow: hidden;
+
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  .table__item {
+    background-color: #f2f2f2;
+  }
+
+  .category__inputs {
+    margin-bottom: 40px;
+  }
+}
+
+.payload-item__texture-id {
+  margin-left: 24px;
+}
+
+.solution-input {
+  margin: 40px 0 24px;
+}

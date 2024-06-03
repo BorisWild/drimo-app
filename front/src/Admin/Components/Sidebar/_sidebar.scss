@@ -1,0 +1,118 @@
+.sidebar {
+
+  width: 18.75%;
+  background: white;
+  color: black;
+  font-family: $adder;
+  font-size: 1rem;
+  line-height: 1rem;
+  border-right: 2px solid black;
+  height: 100vh;
+  position: fixed;
+  z-index: 200;
+
+  @media (max-width: 1023px) {
+    position: static;
+    height: auto;
+    width: 100%;
+    border-right: 0;
+    border-bottom: 2px solid black;
+
+
+  }
+
+  &__menu-desktop {
+    @media (max-width: 1023px) {
+      display: none;
+    }
+  }
+
+  a {
+    color: black;
+  }
+
+  &__logo {
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid black;
+  }
+
+  &__item {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px 16px;
+    background-color: white;
+    border-bottom: 2px solid black;
+    transition: .2s;
+
+    &:hover {
+      background-color: #EFEFEF;
+    }
+
+    &_active {
+      background-color: $brand-yellow;
+
+      &:hover {
+        background-color: $brand-yellow;
+      }
+    }
+  }
+
+  &__title {}
+}
+
+
+.sidebar-mobile-menu {
+
+  @media (min-width: 1024px) {
+    display: none;
+  }
+
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  &__burger-button {
+    display: flex;
+    padding: 20px;
+    border-left: 2px solid black;
+    cursor: pointer;
+    transition: .2s;
+
+    &_active {
+      background-color: $brand-red;
+    }
+  }
+
+  &__logo {
+    position: absolute;
+    top: 5px;
+    left: calc(50% - 46px);
+    height: 41px;
+  }
+
+  &__body {
+    transition: .2s;
+
+    transform: translateX(100%);
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 62px;
+    left: 0;
+    height: calc(100vh - 62px);
+    width: 100vw;
+    background-color: white;
+
+    &_active {
+      transform: translateX(0);
+
+    }
+  }
+}

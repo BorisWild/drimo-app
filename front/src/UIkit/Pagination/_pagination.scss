@@ -1,0 +1,43 @@
+.pagination {
+    display: flex;
+
+    &__buttons {
+
+        border: 1px solid black;
+        display: flex;
+        margin-top: 24px;
+
+        @media (max-width: 479px) {
+            margin-top: 12px;
+        }
+
+
+    }
+
+    &__page {
+        font-family: $helv;
+        padding: 16px;
+        font-size: .875rem;
+        line-height: 1rem;
+        width: 48px;
+        height: 48px;
+        text-align: center;
+        cursor: pointer;
+        transition: .2s;
+
+
+
+        &:not(:nth-child(1)) {
+            border-left: 1px solid black;
+        }
+
+        &:not(&_active):hover {
+            background-color: #EFEFEF;
+        }
+
+        &_active {
+            background: black;
+            color: white;
+        }
+    }
+}

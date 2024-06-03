@@ -1,0 +1,137 @@
+.modal {
+
+    display: none;
+    transition: .2s;
+
+
+    &_active {
+        background: rgba(0, 0, 0, 0.5);
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+
+        @media (max-width: 479px) {
+            padding: 0 16px;
+
+        }
+    }
+
+
+
+    &__container {
+        max-width: 33.333%;
+        background-color: white;
+        padding: 48px;
+        display: flex;
+        position: relative;
+
+        @media (max-width: 1024px) {
+            max-width: 50%;
+        }
+
+        @media (max-width: 480px) {
+            max-width: 100%;
+            padding: 44px 20px;
+        }
+    }
+
+    &__close {
+        cursor: pointer;
+        position: absolute;
+        right: 24px;
+        top: 24px;
+
+        @media (max-width: 480px) {
+            right: 20px;
+            top: 20px;
+        }
+    }
+
+    &__body {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+
+        .buttons-container {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            gap: 16px;
+
+            .button {
+                width: 50%;
+            }
+        }
+    }
+
+    &__title {
+        padding-right: 2rem;
+        font-size: 3rem;
+        margin-bottom: 8px;
+
+        @media (max-width: 1024px) {
+            font-size: 2rem;
+
+        }
+
+    }
+
+    &_login {
+        gap: 0;
+
+        .input {
+            margin-top: 24px;
+        }
+
+    }
+
+    &_code {
+        gap: 0;
+
+        .input {
+            margin-top: 24px;
+        }
+    }
+
+    .button {
+        margin-top: 32px;
+    }
+
+    &__hints-container {
+        margin-top: 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    &__hint {
+        font-family: $helv;
+        font-size: .75rem;
+        width: max-content;
+
+        &_non-valid {
+            margin-top: 4px;
+        }
+
+        &_code {
+            cursor: pointer;
+        }
+
+    }
+
+    &_delete {
+        gap: 4px;
+
+        .button {
+            margin-top: 20px;
+        }
+    }
+
+}

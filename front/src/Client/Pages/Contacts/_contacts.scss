@@ -1,0 +1,150 @@
+.contacts {
+
+    &__title {
+        margin: 64px 0 40px;
+
+        @media (max-width: 768px) {
+            margin: 0 0 16px;
+        }
+    }
+
+    &__body {
+        display: flex;
+        border: 2px solid #000000;
+        align-items: stretch;
+
+        @media (max-width: 991px) {
+            flex-direction: column;
+        }
+    }
+
+    &__item {
+        color: white;
+        padding: 48px;
+
+        width: 50%;
+
+        @media (max-width: 991px) {
+            width: 100%;
+        }
+
+        @media (max-width: 1024px) {
+            padding: 20px;
+        }
+    }
+
+    .item {
+
+        &_red-bg {
+            border-right: 2px solid #000000;
+
+            @media (max-width: 991px) {
+                border-bottom: 2px solid #000000;
+                border-right: none;
+            }
+
+            background-color: $brand-red;
+        }
+
+        &_blue-bg {
+            background-color: $brand-blue;
+
+            @media (max-width: 991px) {
+                border-right: none;
+            }
+        }
+
+        &__title {
+            font-family: $helv;
+            font-size: .875rem;
+        }
+
+        &__contact {
+            margin-top: 12px;
+            font-family: $adder;
+            font-size: 3rem;
+
+            @media (max-width: 575px) {
+                font-size: 2rem;
+            }
+        }
+
+        &__socials {}
+
+        &__contact-address {
+            font-size: 2rem;
+
+            @media (max-width: 1159px) {
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    &__address {
+
+        display: flex;
+        align-items: stretch;
+
+        @media (max-width: 768px) {
+            flex-direction: column;
+
+            border-right: none;
+        }
+
+        border-right: 2px solid #000000;
+        border-left: 2px solid #000000;
+        border-bottom: 2px solid #000000;
+
+
+        .item {
+            border-right: 2px solid #000000;
+            color: black;
+            width: 25%;
+
+            height: 487px;
+
+            @media (max-width: 1024px) {
+                height: 250px;
+            }
+
+            @media (max-width: 768px) {
+                height: 108px;
+            }
+
+            @media (max-width: 768px) {
+                width: 100%;
+                border-bottom: 2px solid #000000;
+            }
+        }
+    }
+
+    &__map-container {
+        width: 75%;
+        position: relative;
+        pointer-events: auto;
+
+        @media (max-width: 768px) {
+            width: 100%;
+            border-right: 2px solid #000000;
+        }
+
+        // .map {
+        //     pointer-events: none;
+        // }
+    }
+}
+
+.socials-list {
+    margin-top: 24px;
+}
+
+.social-list {
+
+    &__title {}
+}
+
+.socials {
+    margin-top: 12px;
+
+    &__item {}
+}

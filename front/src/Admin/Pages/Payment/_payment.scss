@@ -1,0 +1,19 @@
+.payment {
+  &__header {
+    .button-container {
+      margin: 16px 0 32px;
+
+      @media (max-width: 480px) {
+        margin: 16px 0 8px;
+      }
+    }
+  }
+
+  &__table {
+    margin-top: 16px;
+
+    @media (max-width: 480px) {
+      margin: 0;
+    }
+  }
+}

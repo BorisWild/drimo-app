@@ -1,0 +1,92 @@
+.mobile-sort {
+
+
+  display: flex;
+
+  &__buttons {
+    display: flex;
+    gap: 8px;
+    width: 100%;
+
+    .button {
+
+      min-width: auto;
+    }
+  }
+
+  &__menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: white;
+    z-index: 999;
+    width: 100vw;
+    height: 100vh;
+    transition: .2s;
+    padding: 32px 16px;
+    transform: translateX(100%);
+
+    .table__sort {
+      display: flex;
+      flex-direction: column;
+      font-family: $helv;
+      font-size: 0.875rem;
+      padding: 0;
+      min-width: 100%;
+      gap: 24px;
+
+      &-item {
+        flex-direction: column;
+        gap: 24px;
+
+        &_date {
+          width: 100%;
+        }
+      }
+    }
+
+    &_active {
+      transform: translateX(0);
+    }
+  }
+
+  &__title {
+    font-family: $adder;
+    font-size: 3rem;
+    line-height: 3rem;
+    font-weight: 700;
+    margin-bottom: 32px;
+  }
+
+  &__filters {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    .filter {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .filter__list {
+      padding: 24px 0 16px;
+      position: relative;
+    }
+  }
+
+  &__close {
+    position: absolute;
+    right: 16px;
+  }
+
+  .button_primary {
+    position: absolute;
+    bottom: 24px;
+    left: 16px;
+    width: calc(100% - 32px)
+  }
+
+  @media (min-width: 480px) {
+    display: none;
+  }
+}

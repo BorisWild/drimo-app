@@ -1,0 +1,121 @@
+<mjml>
+  <mj-head>
+    <mj-title>
+      12345
+    </mj-title>
+    <mj-style>
+      .wrapper {
+      padding: 20px 12px 20px 12px !important;
+      background-color: #F3F5F8 !important;
+      box-sizing: border-box !important;
+      max-width: 700px !important;
+      }
+
+      .wrapper>table {
+      max-width: 600px !important;
+      width: 100% !important;
+      }
+
+      .heading1 {
+      font-size: 28px !important;
+      margin: 0 !important;
+      margin-bottom: 16px !important;
+      }
+
+      .container {
+      background-color: #FFFFFF !important;
+      padding: 28px !important;
+      margin: 0 !important;
+      }
+
+      .container>table>tbody>tr>td {
+      padding: 0 !important;
+      }
+
+      .contacts {
+      width: 100% !important;
+      min-width: 208px !important;
+      }
+
+      .contacts-block {
+      padding: 0 !important;
+      padding-bottom: 40px !important;
+
+      }
+
+      .copyright td {
+      padding: 0 !important;
+      }
+
+    </mj-style>
+  </mj-head>
+  <mj-body width="700px">
+    <mj-wrapper css-class="wrapper">
+      <mj-section padding="0" padding-bottom="28px">
+        <mj-column>
+          <mj-image width="112px" padding="0" src="https://drimo.dev-2-tech.ru:4321/src/files/mail/Logo.png" align="left" />
+        </mj-column>
+      </mj-section>
+      <mj-section css-class='container'>
+
+        <mj-column>
+
+          <mj-text padding="0" font-family="Helvetica">
+            <h1 class='heading1'>
+              Изменение данных
+            </h1>
+            <p style="font-size:14px;line-height:16px;margin:0;">
+              Здравствуйте, Дримо Олег Андреевич! <br>
+              Вы сменили номер вашего телефона на
+              <span style="font-weight:700; white-space:nowrap;">
+                +7 (495) 186-61-45
+              </span>
+            </p>
+          </mj-text>
+        </mj-column>
+      </mj-section>
+      <mj-section padding="28px 0 24px 0">
+        <mj-column padding-bottom="16px" css-class="contacts">
+          <mj-text css-class="contacts-block" font-family="Helvetica">
+            <h3 style="font-size:20px;margin:0;margin-bottom:8px">
+              + 7 (495) 186-61-45
+            </h3>
+            <h4 style="font-size:16px;margin:0;">
+              drimo.example@mail.ru
+            </h4>
+          </mj-text>
+          <mj-button href="https://drimo.dev-2-tech.ru/constructor" align="left" font-family="Helvetica" padding="0" background-color="transparent" color="#E92627" font-weight="700" font-size="12px" line-height="16px" border="1px solid #E92627" border-radius="0" inner-padding="17px 24px" width="192px">
+            К КОНСТРУКТОРУ
+          </mj-button>
+        </mj-column>
+        <mj-column css-class="contacts">
+          <mj-text padding="0" font-family="Helvetica">
+            <p style="font-size:14px;margin:0;color:#A2A2A2;">Мы в соц. сетях</p>
+          </mj-text>
+          <mj-social mode="horizontal" align="left" padding="0">
+            <mj-social-element icon-size="40px" padding="0" border-radius="0" src="https://drimo.dev-2-tech.ru:4321/src/files/mail/vk.png" />
+            <mj-social-element icon-size="40px" padding="8px" border-radius="0" src="https://drimo.dev-2-tech.ru:4321/src/files/mail/yt.png" />
+          </mj-social>
+          <mj-text padding="0" font-family="Helvetica">
+            <p style="font-size:14px;margin:0;margin-top:8px;color:#A2A2A2;">Связаться с нами</p>
+          </mj-text>
+          <mj-social mode="horizontal" align="left" padding="0">
+            <mj-social-element icon-size="40px" padding="0" border-radius="0" src="https://drimo.dev-2-tech.ru:4321/src/files/mail/wa.png" />
+            <mj-social-element icon-size="40px" padding="8px" border-radius="0" src="https://drimo.dev-2-tech.ru:4321/src/files/mail/tg.png" />
+          </mj-social>
+        </mj-column>
+      </mj-section>
+      <mj-section css-class="copyright">
+
+        <mj-column padding="0">
+          <mj-text padding="0" font-family="Helvetica">
+            <p style="font-size:12px;margin:0;color:#A2A2A2;">© 2022 DRIMO</p>
+          </mj-text>
+
+        </mj-column>
+      </mj-section>
+    </mj-wrapper>
+
+  </mj-body>
+
+</mjml>

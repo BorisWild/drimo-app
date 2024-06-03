@@ -1,0 +1,37 @@
+@import 'variables';
+@import 'nullstyle';
+@import 'main';
+@import 'fonts';
+
+
+
+// CLIENT STYLES
+@import '../Client/Pages/About/about';
+@import '../Client/Pages/Catalog/catalog';
+
+@import '../Client/Components/Header/header';
+@import '../Client/Components/Footer/footer';
+@import '../Client/Pages/Contacts/contacts';
+
+@import '../Client/Pages/Account/account';
+@import '../Client/Pages/InfoPages/infopages';
+@import '../Client/Pages/SavedConstructions/savedconstr';
+@import '../Client/Pages/Order/order';
+@import '../Client/Pages/Home/home';
+@import '../Client/Components/OrderEntity/orderentity';
+@import '../Client/Pages/404/error';
+
+// ADMIN STYLES
+
+@import '../Admin/admin';
+
+@import '../Admin/Components/Sidebar/sidebar';
+
+// MANAGER STYLES
+
+@import '../Manager/manager';
+
+// UI KIT
+
+@import '../UIkit/uikit';
+@import '../UIkit/icons';

@@ -1,0 +1,28 @@
+.breadcrumbs {
+
+  display: flex;
+  margin: 12px 0 40px;
+
+  @media (max-width: 480px) {
+    display: none;
+  }
+
+  &__item {
+    font-family: $helv;
+    font-style: normal;
+    font-weight: 400;
+    font-size: .875rem;
+    line-height: 16px;
+    color: #A2A2A2;
+
+    &_active {
+      cursor: pointer;
+      transition: .2s;
+
+      &:hover {
+        color: #777777;
+
+      }
+    }
+  }
+}

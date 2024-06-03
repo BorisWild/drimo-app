@@ -1,0 +1,606 @@
+<mjml>
+  <mj-head>
+    <mj-title>
+      12345
+    </mj-title>
+    <mj-style>
+      .wrapper {
+      padding: 20px 12px 20px 12px !important;
+      background-color: #F3F5F8 !important;
+      box-sizing: border-box !important;
+      max-width: 700px !important;
+      }
+      .wrapper>table {
+      max-width: 600px !important;
+      width: 100% !important;
+      }
+      .heading1 {
+      font-size: 28px !important;
+      margin: 0 !important;
+      margin-bottom: 16px !important;
+      }
+
+      .container3 {
+      background-color: #FFFFFF !important;
+      padding: 16px 28px 0 !important;
+      margin: 0 !important;
+      }
+      .container3>table>tbody>tr>td {
+      padding: 0 !important;
+      }
+      .container2 {
+      background-color: #FFFFFF !important;
+      padding: 16px 28px 0 !important;
+      }
+
+      .container3 td {
+      padding: 0 !important;
+      }
+
+
+
+      .container2 td {
+      padding: 0 !important;
+      }
+
+      .container4 {
+      background-color: #FFFFFF !important;
+      padding: 16px 28px 0 !important;
+      }
+
+      .container4 td {
+      padding: 0 !important;
+      }
+
+      .container4 div {
+      width: 50% !important;
+      }
+
+      .container4 div div {
+      width: 100% !important;
+      }
+
+      .container1 {
+      background-color: white !important;
+      padding: 16px 28px 0 !important;
+      }
+
+      .container1 * {
+      padding: 0 !important;
+      }
+
+      .container3>table>tbody>tr>td {
+      padding: 0 !important;
+      display: flex;
+      width: 100%;
+      gap: 16px;
+      flex-wrap: wrap;
+      }
+
+      .last {
+      padding-bottom: 28px !important;
+      }
+
+      .contacts {
+      width: 50% !important;
+      }
+
+      .contacts-block {
+      padding: 0 !important;
+      padding-bottom: 40px !important;
+
+      }
+
+
+
+      .copyright {
+      padding: 0 !important;
+      }
+
+      .col-image {
+      min-width: 48px !important;
+      width: 9.23% !important;
+      padding: 0 !important;
+
+      }
+
+      .col-description {
+
+      max-width: 100% !important;
+      padding: 0 !important;
+      flex: 1 0 auto;
+      }
+
+      .col-quantity {
+      width: 100% !important;
+      padding: 0 !important;
+
+      }
+      .col-quantity *{
+      width: 100% !important;
+
+      }
+      .col-price {
+      width: max-content !important;
+      max-width: 100%;
+      min-width: 84px;
+      padding: 0 !important;
+      }
+
+      .col-price *{
+      width: 100% !important;
+      max-width: 100% !important;
+      }
+      .table-text {
+      padding: 0 !important;
+      }
+
+      .table-text-padding {
+      padding: 0 0 0 16px !important;
+      }
+
+      .copyright td {
+      padding: 0 !important;
+      }
+
+      .description-text {
+      padding: 0 !important;
+      }
+
+      .divider-container {
+      padding: 0 28px 16px !important;
+      }
+
+      .divider-container td {
+      padding: 0 !important;
+      }
+
+      .button-container {
+      padding: 0 28px 28px !important;
+      }
+
+      .button-container td {
+      padding: 0 !important;
+      }
+
+      .delivery-container {
+      padding: 28px 28px 0 !important;
+      background-color: #F3D35D !important;
+      }
+
+      .delivery-container2 {
+      padding: 0 28px !important;
+      background-color: #F3D35D !important;
+      }
+
+      .delivery-container3 {
+      padding: 0 28px 28px !important;
+      background-color: #F3D35D !important;
+      }
+
+      .delivery-container div {
+      width: 50% !important;
+      }
+
+      .delivery-container2 div {
+      width: 50% !important;
+      }
+
+      .delivery-container3 div {
+      width: 50% !important;
+      }
+
+      .delivery-container div div {
+      width: 100% !important;
+      }
+
+      .delivery-container2 div div {
+      width: 100% !important;
+      }
+
+      .delivery-container3 div div {
+      width: 100% !important;
+      }
+
+      .delivery-container td {
+      padding: 0 !important;
+      }
+
+      .delivery-container2 td {
+      padding: 0 !important;
+      }
+
+      .delivery-container3 td {
+      padding: 0 !important;
+      }
+
+      .delivery-container3 td div td {
+      padding: 0 !important;
+      }
+    </mj-style>
+  </mj-head>
+  <mj-body width="600px">
+    <mj-wrapper css-class="wrapper">
+      <mj-section padding="0" padding-bottom="28px">
+        <mj-column>
+          <mj-image width="112px" padding="0" src="https://drimo.dev-2-tech.ru:4321/src/files/mail/Logo.png" align="left" />
+        </mj-column>
+      </mj-section>
+      <mj-section css-class='container1'>
+        <mj-column>
+
+          <mj-text padding="0" font-family="Helvetica">
+            <h1 class='heading1'>
+              Статус заказа
+            </h1>
+            <p style="font-size:14px;line-height:16px;margin:0;">
+              Здравствуйте, Дримо Олег Андреевич! <br>
+
+              Статус вашего заказ <span style="color:#E92627">№110878438</span> обновлен до “Отправлен”. Отслеживайте его в разделе «Мои заказы».
+
+            </p>
+
+
+          </mj-text>
+        </mj-column>
+      </mj-section>
+
+      <mj-section css-class='container1'>
+        <mj-column>
+          <mj-text padding="0" font-family="Helvetica">
+            <h3 style="font-size:16px;margin:0;">
+              Информация о вашем заказе <span style="color:#E92627">№1241251</span> от 5 мая, 2022
+            </h3>
+          </mj-text>
+        </mj-column>
+      </mj-section>
+      <mj-section css-class='container4'>
+        <mj-column padding="0">
+          <mj-text padding="0" font-family="Helvetica" vertical-align="middle">
+            <p style="font-size:12px;margin:0;color:#A1A1A1;">
+              Способ оплаты
+            </p>
+          </mj-text>
+        </mj-column>
+        <mj-column padding="0">
+          <mj-text padding="0" font-family="Helvetica" vertical-align="middle">
+            <p style="font-size:14px;margin:0;">
+              Картой онлайн
+            </p>
+          </mj-text>
+        </mj-column>
+      </mj-section>
+      <mj-section css-class='container4'>
+        <mj-column>
+          <mj-text padding="0" font-family="Helvetica" vertical-align="middle">
+            <p style="font-size:12px;margin:0;color:#A1A1A1;">
+              Способ доставки
+            </p>
+          </mj-text>
+        </mj-column>
+        <mj-column>
+          <mj-text padding="0" font-family="Helvetica" vertical-align="middle">
+            <p style="font-size:14px;margin:0;">
+              PickPoint (пункты выдачи)
+              <br>
+              <br>
+              Пункт PickPoint, Россия, г. Москва, ул. Гагарина, дом 16, корпус 1
+            </p>
+          </mj-text>
+        </mj-column>
+      </mj-section>
+      <mj-section css-class='container4'>
+        <mj-column padding="0">
+          <mj-text padding="0" font-family="Helvetica" vertical-align="middle">
+            <p style="font-size:12px;margin:0;color:#A1A1A1;">
+              Статус заказа
+            </p>
+          </mj-text>
+        </mj-column>
+        <mj-column padding="0">
+          <mj-text padding="0" font-family="Helvetica" vertical-align="middle">
+            <p style="font-size:14px;margin:0;">
+              Оплачен
+            </p>
+          </mj-text>
+        </mj-column>
+      </mj-section>
+      <mj-section css-class='container4'>
+        <mj-column padding="0">
+          <mj-text padding="0" font-family="Helvetica" vertical-align="middle">
+            <p style="font-size:12px;margin:0;color:#A1A1A1;">
+              Комментарии к заказу
+            </p>
+          </mj-text>
+        </mj-column>
+        <mj-column padding="0">
+          <mj-text padding="0" font-family="Helvetica" vertical-align="middle">
+            <p style="font-size:14px;margin:0;">
+              Буду дома после 18:00
+            </p>
+          </mj-text>
+        </mj-column>
+      </mj-section>
+      <mj-section css-class='container1'>
+        <mj-column>
+          <mj-text padding="0" font-family="Helvetica">
+            <h3 style="font-size:16px;line-height:21px;margin:0;">
+              Состав заказа
+            </h3>
+          </mj-text>
+        </mj-column>
+      </mj-section>
+      <mj-section css-class='container2'>
+        <mj-column padding="0">
+          <mj-divider padding="0" border-color="#E4E4E4" border-width="1px" />
+        </mj-column>
+      </mj-section>
+      <mj-section css-class='container3'>
+        <mj-column css-class="col-image">
+
+          <mj-image src="./solution.png" width="48px" align="left" padding="0" />
+
+        </mj-column>
+        <mj-column css-class="col-description">
+
+          <mj-text css-class="description-text" font-family="Helvetica">
+            <p style="font-size:14px;line-height:16px;margin:0;">
+              Стеллаж обычный <br>
+              <span style="color:#A2A2A2;font-size:12px;line-height:14px;">2340 x 2340 x 600 мм</span>
+            </p>
+          </mj-text>
+
+        </mj-column>
+        <mj-column css-class="col-quantity">
+
+          <mj-text css-class="table-text" font-family="Helvetica">
+            <p style="white-space:nowrap;font-size:12px;line-height:14px;margin:0;color:#A2A2A2;">
+              1 шт
+            </p>
+          </mj-text>
+
+        </mj-column>
+        <mj-column css-class="col-price">
+
+          <mj-text css-class="table-text table-text-padding" font-family="Helvetica">
+            <p style="white-space:nowrap;font-size:14px;line-height:19px;margin:0;margin-bottom:16px;font-weight:700;">
+              12 759 ₽
+            </p>
+          </mj-text>
+
+        </mj-column>
+      </mj-section>
+      <mj-section css-class='container2' background-color="#FFFFFF">
+        <mj-column padding="0">
+          <mj-divider padding="0" border-color="#E4E4E4" border-width="1px" />
+        </mj-column>
+      </mj-section>
+      <mj-section css-class='container3'>
+        <mj-column css-class="col-image">
+
+          <mj-image src="./klyuch.png" width="48px" align="left" padding="0" />
+
+        </mj-column>
+        <mj-column css-class="col-description">
+
+          <mj-text css-class="description-text" font-family="Helvetica">
+            <p style="font-size:14px;line-height:16px;margin:0;">
+              Рожковый ключ 6х7мм Stanley STMT72837-8 <br>
+              <span style="color:#A2A2A2;font-size:12px;line-height:14px;">Для сборки панелей и профилей</span>
+            </p>
+          </mj-text>
+
+        </mj-column>
+        <mj-column css-class="col-quantity">
+
+          <mj-text css-class="table-text" font-family="Helvetica">
+            <p style="white-space:nowrap;font-size:12px;line-height:14px;margin:0;color:#A2A2A2;">
+              10 шт
+            </p>
+          </mj-text>
+
+        </mj-column>
+        <mj-column css-class="col-price">
+
+          <mj-text font-family="Helvetica" css-class="table-text table-text-padding">
+            <p style="white-space:nowrap;font-size:14px;line-height:19px;margin:0;margin-bottom:16px;font-weight:700;">
+              72 ₽
+            </p>
+          </mj-text>
+
+        </mj-column>
+      </mj-section>
+      <mj-section css-class='container2' background-color="#FFFFFF">
+        <mj-column padding="0">
+          <mj-divider padding="0" border-color="#E4E4E4" border-width="1px" />
+        </mj-column>
+      </mj-section>
+      <mj-section css-class='container3'>
+        <mj-column css-class="col-image">
+
+          <mj-image src="./6klyuch.png" width="48px" align="left" padding="0" />
+
+        </mj-column>
+        <mj-column css-class="col-description">
+
+          <mj-text css-class="description-text" font-family="Helvetica">
+            <p style="font-size:14px;line-height:16px;margin:0;">
+              Шестигранный ключ 6мм, покрытие хром GRIFF 031115 <br>
+              <span style="color:#A2A2A2;font-size:12px;line-height:14px;">Текст для чего инструмент при сборке конструкции</span>
+            </p>
+          </mj-text>
+
+        </mj-column>
+        <mj-column css-class="col-quantity">
+
+          <mj-text css-class="table-text" font-family="Helvetica">
+            <p style="white-space:nowrap;font-size:12px;line-height:14px;margin:0;color:#A2A2A2;">
+              10 шт
+            </p>
+          </mj-text>
+
+        </mj-column>
+        <mj-column css-class="col-price">
+
+          <mj-text css-class="table-text table-text-padding" font-family="Helvetica">
+            <p style="white-space:nowrap;font-size:14px;line-height:19px;margin:0;margin-bottom:16px;font-weight:700;">
+              12 000 ₽
+            </p>
+          </mj-text>
+
+        </mj-column>
+      </mj-section>
+      <mj-section css-class='container2' background-color="#FFFFFF">
+        <mj-column padding="0">
+          <mj-divider padding="0" border-color="#E4E4E4" border-width="1px" />
+        </mj-column>
+      </mj-section>
+      <mj-section css-class='container3 last'>
+        <mj-column css-class="col-image">
+
+          <mj-image src="./kiyanka.png" width="48px" align="left" padding="0" />
+
+        </mj-column>
+        <mj-column css-class="col-description">
+
+          <mj-text css-class="description-text" font-family="Helvetica">
+            <p style="font-size:14px;line-height:16px;margin:0;">
+              Чёрная резиновая киянка STAYER 450 г 2054-65 <br>
+              <span style="color:#A2A2A2;font-size:12px;line-height:14px;">Понадобится для соединение панелей</span>
+            </p>
+          </mj-text>
+
+        </mj-column>
+        <mj-column css-class="col-quantity">
+
+          <mj-text css-class="table-text" font-family="Helvetica">
+            <p style="white-space:nowrap;font-size:12px;line-height:14px;margin:0;color:#A2A2A2;">
+              10 шт
+            </p>
+          </mj-text>
+
+        </mj-column>
+        <mj-column css-class="col-price">
+
+          <mj-text font-family="Helvetica" css-class="table-text table-text-padding">
+            <p style="white-space:nowrap;font-size:14px;line-height:19px;margin:0;margin-bottom:16px;font-weight:700;">
+              12 000 ₽
+            </p>
+          </mj-text>
+
+        </mj-column>
+      </mj-section>
+      <mj-section css-class="delivery-container">
+        <mj-column padding="0">
+          <mj-text padding="0" font-family="Helvetica">
+            <p style="font-size:14px;line-height:16px;margin:0;">
+              Доставка <br>
+            </p>
+          </mj-text>
+        </mj-column>
+        <mj-column padding="0">
+          <mj-text padding="0" font-family="Helvetica" align="right">
+            <p style="font-size:14px;line-height:19px;margin:0;margin-bottom:16px;font-weight:700;">
+              7 850 ₽
+            </p>
+          </mj-text>
+        </mj-column>
+      </mj-section>
+      <mj-section css-class="delivery-container2">
+        <mj-column padding="0">
+          <mj-text padding="0" font-family="Helvetica">
+            <p style="font-size:14px;line-height:16px;margin:0;">
+              Вес, кг <br>
+            </p>
+          </mj-text>
+        </mj-column>
+        <mj-column padding="0">
+          <mj-text padding="0" font-family="Helvetica" align="right">
+            <p style="font-size:14px;line-height:19px;margin:0;margin-bottom:16px;font-weight:700;">
+              12 кг
+            </p>
+          </mj-text>
+        </mj-column>
+      </mj-section>
+      <mj-section css-class="delivery-container2">
+        <mj-column padding="0">
+          <mj-text padding="0" font-family="Helvetica">
+            <p style="font-size:14px;line-height:16px;margin:0;">
+              Кол-во деталей <br>
+            </p>
+          </mj-text>
+        </mj-column>
+        <mj-column padding="0">
+          <mj-text padding="0" font-family="Helvetica" align="right">
+            <p style="font-size:14px;line-height:19px;margin:0;margin-bottom:16px;font-weight:700;">
+              124 шт.
+            </p>
+          </mj-text>
+        </mj-column>
+      </mj-section>
+      <mj-section padding="0 28px 16px" background-color="#F3D35D">
+        <mj-column padding="0">
+          <mj-divider padding="0" border-color="#000000" border-width="1px" />
+        </mj-column>
+      </mj-section>
+      <mj-section css-class="delivery-container3">
+        <mj-column padding="0">
+          <mj-text padding="0" font-family="Helvetica">
+            <p style="font-size:14px;line-height:16px;margin:0;">
+              Итого <br>
+            </p>
+          </mj-text>
+        </mj-column>
+        <mj-column padding="0">
+          <mj-text padding="0" font-family="Helvetica" align="right">
+            <p style="font-size:24px;line-height:32px;margin:0;font-weight:700;">
+              17 850 ₽
+            </p>
+          </mj-text>
+        </mj-column>
+      </mj-section>
+      <mj-section padding="28px 0 24px 0">
+        <mj-column padding-bottom="16px" css-class="contacts">
+          <mj-text css-class="contacts-block" font-family="Helvetica">
+            <h3 style="font-size:20px;margin:0;margin-bottom:8px">
+              + 7 (495) 186-61-45
+            </h3>
+            <h4 style="font-size:16px;margin:0;">
+              drimo.example@mail.ru
+            </h4>
+          </mj-text>
+          <mj-button href="https://drimo.dev-2-tech.ru/constructor" align="left" font-family="Helvetica" padding="0" background-color="transparent" color="#E92627" font-weight="700" font-size="12px" line-height="16px" border="1px solid #E92627" border-radius="0" inner-padding="17px 24px" width="192px">
+            К КОНСТРУКТОРУ
+          </mj-button>
+        </mj-column>
+        <mj-column css-class="contacts">
+          <mj-text padding="0" font-family="Helvetica">
+            <p style="font-size:14px;margin:0;color:#A2A2A2;">Мы в соц. сетях</p>
+          </mj-text>
+          <mj-social mode="horizontal" align="left" padding="0">
+            <mj-social-element icon-size="40px" padding="0" border-radius="0" src="https://drimo.dev-2-tech.ru:4321/src/files/mail/vk.png" />
+            <mj-social-element icon-size="40px" padding="8px" border-radius="0" src="https://drimo.dev-2-tech.ru:4321/src/files/mail/yt.png" />
+          </mj-social>
+          <mj-text padding="0" font-family="Helvetica">
+            <p style="font-size:14px;margin:0;margin-top:8px;color:#A2A2A2;">Связаться с нами</p>
+          </mj-text>
+          <mj-social mode="horizontal" align="left" padding="0">
+            <mj-social-element icon-size="40px" padding="0" border-radius="0" src="https://drimo.dev-2-tech.ru:4321/src/files/mail/wa.png" />
+            <mj-social-element icon-size="40px" padding="8px" border-radius="0" src="https://drimo.dev-2-tech.ru:4321/src/files/mail/tg.png" />
+          </mj-social>
+        </mj-column>
+      </mj-section>
+      <mj-section css-class="copyright">
+
+        <mj-column padding="0">
+          <mj-text padding="0" font-family="Helvetica">
+            <p style="font-size:12px;margin:0;color:#A2A2A2;">© 2022 DRIMO</p>
+          </mj-text>
+
+        </mj-column>
+      </mj-section>
+    </mj-wrapper>
+
+  </mj-body>
+
+</mjml>

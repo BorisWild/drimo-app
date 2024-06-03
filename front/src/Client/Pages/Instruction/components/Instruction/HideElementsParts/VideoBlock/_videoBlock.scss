@@ -1,0 +1,35 @@
+.item-video-instructions-hide {
+	&__body {
+		width: 190px;
+		height: 190px;
+		background-color: #ffffff;
+		border: 1px solid #000000;
+		@media (max-width: 767.98px) {
+			width: 168px;
+			height: 168px;
+		}
+		@media (max-width: 500px) {
+			width: 150px;
+			height: 150px;
+		}
+		@media (max-width: 400px) {
+			width: 135px;
+			height: 135px;
+		}
+	}
+	&__inner {
+		position: relative;
+		margin: 8px;
+	}
+	&__image {
+		img {
+			max-width: 100%;
+		}
+	}
+	&__icon-play {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		cursor: pointer;
+	}
+}

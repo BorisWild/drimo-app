@@ -1,0 +1,40 @@
+.delivery {
+  &__table {
+    margin-top: 16px;
+
+    @media (max-width: 480px) {
+      margin: 0;
+    }
+  }
+
+  &__header {
+    .button-container {
+      margin: 16px 0 32px;
+
+      @media (max-width: 480px) {
+        margin: 16px 0 8px;
+      }
+    }
+  }
+}
+
+.delivery-page {
+  &__header {
+    .page-title {
+      margin: 24px 0 12px;
+    }
+
+  }
+
+  &__inputs {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 66.6667%;
+
+    @media (max-width: 480px) {
+      width: 100%;
+    }
+  }
+}

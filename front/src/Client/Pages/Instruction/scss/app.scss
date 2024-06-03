@@ -1,0 +1,22 @@
+@import 'variables';
+@import 'nullstyle';
+// @import 'fonts';
+
+@import '../components/ui/Material/material';
+@import '../components/Instruction/instruction';
+@import '../components/Instruction/HideElementsParts/hideElementsParts';
+@import '../components/SingleMaterialElement/singleMaterialElement';
+@import '../components/Instruction/HideElementsParts/VideoBlock/videoBlock';
+@import '../components/Instruction/HideElementsParts/VideoBlock/ModalVideo/modalVideo';
+@import '../components/Instruction/ProgressBar/progressBar';
+@import '../pages/Assembly/assembly';
+@import '../components/MainBlock/mainBlock';
+// @import "../components/ui/Button/button";
+@import '../components/Elements/elements';
+
+.wrapper {
+	max-width: 100% !important;
+}
+.wrapper-instruction{
+	padding: 48px 15px 0 15px;
+}

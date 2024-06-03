@@ -1,0 +1,23 @@
+.sort {
+  display: flex;
+  color: #A5A5A5;
+  align-items: center;
+  cursor: pointer;
+  transition: .2s;
+
+  &_active {
+    color: $brand-red;
+  }
+
+  svg path {
+    transition: .2s;
+  }
+
+  &:hover {
+    color: $brand-red;
+
+    svg path {
+      fill: $brand-red;
+    }
+  }
+}

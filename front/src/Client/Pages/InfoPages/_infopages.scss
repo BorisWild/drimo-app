@@ -1,0 +1,49 @@
+.info-page {
+    margin-bottom: 32px;
+
+    &__title {
+        margin: 64px 0 40px;
+    }
+
+    &__content {
+        border-top: 2px solid black;
+    }
+
+    &__section {
+        padding: 48px 0;
+        display: flex;
+        gap: 32px;
+        border-bottom: 2px solid black;
+
+        @media (max-width: 575px) {
+            padding: 24px 0;
+            gap: 12px;
+            flex-direction: column;
+        }
+    }
+
+    &__subtitle {
+        font-family: $adder;
+        font-size: 2rem;
+        width: 33.333%;
+
+        @media (max-width: 575px) {
+            width: 100%;
+        }
+    }
+
+    &__text {
+        width: 66.6667%;
+
+        @media (max-width: 575px) {
+            width: 100%;
+        }
+
+        font-family: $helv;
+
+    }
+}
+
+.container {}
+
+.page-title {}

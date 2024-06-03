@@ -1,0 +1,313 @@
+.input {
+
+  font-family: $helv;
+  width: 100%;
+
+  &__validation {
+    font-family: $helv;
+    color: $brand-red;
+    font-size: 0.75rem;
+    line-height: .875rem;
+    margin-top: 4px;
+  }
+
+
+  &__textarea {
+    width: 100%;
+    resize: none;
+    font-size: .875rem;
+    padding: 16px;
+  }
+
+  &__container {
+    border: 1px solid #D0D0D0;
+    transition: .2s;
+
+    &_focused {
+      border: 1px solid #FF351D;
+
+    }
+
+    &:not(&_focused):hover {
+      border: 1px solid #A1A1A1;
+
+    }
+  }
+
+  &__label {
+    font-size: .75rem;
+    color: #A1A1A1;
+    display: flex;
+    gap: 3px;
+    margin-bottom: 4px;
+    line-height: 14px;
+  }
+
+  &__field {
+    font-size: .875rem;
+    width: 100%;
+    height: 100%;
+    padding: 16px;
+    max-height: 48px;
+
+    &_small {
+      padding: 8px;
+
+      &::placeholder {
+        color: #D9D9D9;
+      }
+    }
+  }
+}
+
+.radio-button {
+  cursor: pointer;
+}
+
+.checkbox {
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-family: $helv;
+  font-size: .875rem;
+  line-height: 16px;
+
+  &__icon {
+    width: 16px;
+    height: 16px;
+    border-radius: 2px;
+    border: 2px solid #E0E0E0;
+    margin: 2px;
+    display: flex;
+    align-items: center;
+    transition: .2s;
+
+    &_active {
+      background-color: $brand-red;
+      border: 2px solid $brand-red;
+      transition: .2s;
+
+    }
+
+    &:hover {
+      .checkbox__icon {
+        border: 2px solid #C4C4C4;
+      }
+
+      .checkbox__icon_active {
+        background-color: $red-hover;
+        border: 2px solid $red-hover;
+      }
+
+    }
+  }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0;
+  /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+.file {
+  font-family: $helv;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  &__label {
+    font-size: .75rem;
+  }
+
+  &__input-container {
+    display: flex;
+  }
+
+  &__input-label {
+    cursor: pointer;
+    color: $brand-red;
+    display: flex;
+    align-items: center;
+    font-size: 0.875rem;
+    gap: 8px;
+  }
+
+  &__input {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+  }
+}
+
+.select {
+  display: flex;
+  font-family: $helv;
+  font-size: .875rem;
+  cursor: pointer;
+  width: 50%;
+
+  @media (max-width: 480px) {
+    width: 100%;
+  }
+
+
+  &__container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+  }
+
+  &__label {
+    font-size: .75rem;
+  }
+
+  &__input {
+    padding: 16px;
+    display: flex;
+    gap: 8px;
+    border: 1px solid #D0D0D0;
+    transition: .2s;
+    justify-content: space-between;
+
+    &:hover {
+      border: 1px solid #A1A1A1;
+
+    }
+
+    &_active {
+      border: 1px solid $brand-red;
+
+      &:hover {
+        border: 1px solid $red-hover ;
+      }
+    }
+  }
+
+  &__list {
+    display: none;
+
+    &_active {
+      display: flex;
+    }
+
+    position: absolute;
+    top: calc(100% + 8px);
+    background-color: white;
+    width: 66.6667%;
+    flex-direction: column;
+    padding: 16px;
+    gap: 16px;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.2);
+    justify-content: flex-start;
+    z-index: 10;
+  }
+
+  &__list-item {
+    transition: .2s;
+
+    &:hover {
+      color: $brand-red;
+    }
+  }
+}
+
+.file-preview {
+  display: flex;
+
+  &__body {
+    display: flex;
+    font-family: $helv;
+    background-color: #EFEFEF;
+    padding: 12px;
+    gap: 8px;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  &__title {
+    font-size: .875rem;
+  }
+
+  &__size {
+    font-size: 0.75rem;
+    color: #A2A2A2;
+  }
+}
+
+.image-input {
+
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+
+  &__label {
+    font-size: 12px;
+    line-height: 14px;
+    color: #A2A2A2;
+  }
+
+  &__image {
+    height: 86px;
+    width: 86px;
+    object-fit: contain;
+
+    &:hover {
+      img {
+        filter: brightness(0.5);
+      }
+    }
+
+    img {
+      cursor: pointer;
+      width: 100%;
+      height: 100%;
+      transition: .2s;
+    }
+  }
+
+  &__input {
+    height: 86px;
+    width: 86px;
+    background-color: #efefef;
+    padding: 33px;
+    transition: .2s;
+
+    svg {
+      path {
+        transition: .2s;
+      }
+
+      circle {
+        transition: .2s;
+      }
+    }
+
+    &:hover {
+      background-color: #6d6d6d;
+
+
+      svg {
+        path {
+          stroke: white;
+        }
+
+        circle {
+          stroke: white;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,44 @@
+.admin-catalog {
+
+  &__title {
+    margin-bottom: 16px;
+  }
+
+  &__header {
+    margin-bottom: 32px;
+  }
+
+  &__sort-button {
+    margin-top: 8px;
+
+    @media(min-width: 1024px) {
+      display: none;
+    }
+  }
+}
+
+.add-category {
+
+  &__title {
+    margin: 24px 0 40px;
+  }
+
+  &__input {
+    width: 66.6667%;
+
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+  }
+
+  &__subtitle {
+    margin: 40px 0 16px;
+
+  }
+
+  &__inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+}
